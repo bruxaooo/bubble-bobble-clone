@@ -40,7 +40,7 @@ switch(estado)
 		
 		
 		
-		
+		/*
 		
 		if(ystart-limite_y>y)instance_destroy();
 		
@@ -57,7 +57,7 @@ switch(estado)
 				x+=sign(image_xscale);
 			}
 		}
-		
+		*/
 		
 		
 		break;	

@@ -66,9 +66,40 @@ switch (estado)
 		//saindodo pulo 
 		estado="movendo";
 		break;
-	case "morto":
 		
+		
+	//====morto===
+	case "morto":
+		timer_parado--;
+		if(timer_parado<=0)
+		{
+			
+			
+			if(timer_volta>0)
+			{
+				timer_volta--;
+				var direcao= point_direction(0,0,-1,-1);
+				x+=lengthdir_x(spd,direcao);
+				y+=lengthdir_y(spd,direcao);
+			}
+			if(timer_volta<=0)
+			{
+				var direcao=point_direction(x,y,xstart,ystart);
+				x+=lengthdir_x(spd*2,direcao);
+				y+=lengthdir_y(spd*2,direcao);
+
+				if(instance_place(x,y,o_inicio))
+				{
+					estado="movendo";
+					timer_volta=50;
+					timer_parado=50
+					show_debug_message(estado)
+					image_alpha=1;
+				}
+			}
+		}
 		break;
+	//_________
 }
 
 

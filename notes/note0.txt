@@ -1,0 +1,24 @@
+
+player 1 ok!
+
+player 2 ??
+
+
+ inimigo ignorar colisao com outras bolhas em determinado estado
+ 
+ criar frutas  local aleatorio ao matar inimigo 
+ derrubar fruta se bater na bolha que tem inimigo 
+ 
+ 
+ 
+ 
+ sistema de pontuacao
+ 
+ fazer transicao de room
+ 
+menu inicial 
+menu pause
+
+
+
+
