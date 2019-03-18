@@ -1,13 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-spd=1;
-h_spd=0;
-v_spd=0;
-grav=.2;
-vida=3;
-salto=5;
 
-delay=20;
+x=other.x;
+y=other.y+other.sprite_height/2;
 
-estado="movendo";
-
+other.estado="sobe";

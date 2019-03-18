@@ -3,7 +3,7 @@
 var right,left,jump,shoot;
 chao=place_meeting(x,y+1,o_col);
 
-
+if(y>room_height+sprite_height)y=-sprite_height/2;
 
 
 right=keyboard_check(vk_right);
@@ -11,7 +11,7 @@ left=keyboard_check(vk_left);
 jump=keyboard_check_pressed(vk_up);
 shoot=keyboard_check_pressed(vk_control);
 
-
+if(delay<20)delay++;
 
 
 
@@ -38,12 +38,12 @@ switch (estado)
 		//_____
 		
 		//atirando
-		if(shoot)
+		if(shoot && delay==20)
 		{
 			var bolha = instance_create_layer(x,y-15,"frutas",o_bolha);
 			bolha.dir= point_direction(0,0,image_xscale,0);
 			bolha.image_xscale=image_xscale;
-			
+			delay=0;
 		}
 		
 		
