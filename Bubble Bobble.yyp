@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "d6d63f41-d42d-4ba9-90d8-7ebfed4d637f",
+            "Value": {
+                "id": "ee529983-b865-433a-a808-7f2913d7bca9",
+                "resourcePath": "sprites\\s_inimigo_bolha\\s_inimigo_bolha.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d97b7dbd-b952-4ca8-b1f6-f6800b5fb19a",
             "Value": {
                 "id": "e7c29cc2-2602-484e-87ee-ee55ce930198",

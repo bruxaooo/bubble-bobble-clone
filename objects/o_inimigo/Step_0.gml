@@ -2,9 +2,31 @@
 // You can write your code in this editor
 
 
+//====state machine
+switch (estado)
+{
+	case "bolha":
+		
+		
+		//morrendo se o player me tocar emquanto estou na bolha 
+		if(place_meeting(x,y,o_player))instance_destroy();
+		
+		break;
+	case "movendo":
+		sprite_index=s_inimigo;
+		
+		
+		
+		break;
 
 
 
+
+
+
+
+}
+//======fim state machine
 if(estado !="bolha")
 {
 
