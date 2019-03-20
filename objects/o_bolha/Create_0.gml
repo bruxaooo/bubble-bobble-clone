@@ -10,5 +10,5 @@ estado="avanca";
 xx = 1;
 
 
-alarm[0]=room_speed*6;
+alarm[0]=room_speed*18;
 alarm[1]=2;

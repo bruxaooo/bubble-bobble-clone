@@ -1,10 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-vida=2;
-spd=1;
-h_spd=0;
-v_spd=0;
-grav=.2;
+if(other.x>x)x-=.3;
+if(other.x<x)x+=.3;
+if(other.y>y)y-=.3;
 
-
-estado="movendo";

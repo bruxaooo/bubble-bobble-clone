@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-event_inherited();
-mask_index=s_col_com_bolha;
+
+if(other.estado!="avanca")other.y+=.5;

@@ -20,6 +20,7 @@ switch (estado)
 {
 	case "movendo":
 		sprite_index=s_dininho_run;
+		image_speed=1;
 		
 		//definindo direcao
 		h_spd=(right-left)*spd;
@@ -71,32 +72,27 @@ switch (estado)
 	//====morto===
 	case "morto":
 		timer_parado--;
+		sprite_index=s_player_morto;
+		if(image_index>=image_number-1)
+		{
+			image_speed=0;
+		}
+		//fico piscando , ate poder voltar ao inicio
 		if(timer_parado<=0)
 		{
 			
 			
 			if(timer_volta>0)
-			{
-				timer_volta--;
-				var direcao= point_direction(0,0,-1,-1);
-				x+=lengthdir_x(spd,direcao);
-				y+=lengthdir_y(spd,direcao);
+			{	
+				x=xstart;
+				y=ystart;
+				estado="movendo";
+				timer_volta=50;
+				timer_parado=90;
+				
+				image_alpha=1;
 			}
-			if(timer_volta<=0)
-			{
-				var direcao=point_direction(x,y,xstart,ystart);
-				x+=lengthdir_x(spd*2,direcao);
-				y+=lengthdir_y(spd*2,direcao);
 
-				if(instance_place(x,y,o_inicio))
-				{
-					estado="movendo";
-					timer_volta=50;
-					timer_parado=50
-					show_debug_message(estado)
-					image_alpha=1;
-				}
-			}
 		}
 		break;
 	//_________

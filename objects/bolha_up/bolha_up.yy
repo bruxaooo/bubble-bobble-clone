@@ -1,28 +1,28 @@
 {
-    "id": "52ad5089-cd1a-41db-b72c-a7097788d139",
+    "id": "e73920e6-4d55-4d0d-808b-6ba01929e4b5",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_inimigo",
+    "name": "bolha_up",
     "eventList": [
         {
-            "id": "a7b0a91e-6741-4a7e-a47b-9a99c0698902",
+            "id": "2f8a0a92-3748-4051-a864-7f30bbb33dda",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "collisionObjectId": "a96821b6-e2ea-4693-9e28-ca6f98349a81",
             "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "52ad5089-cd1a-41db-b72c-a7097788d139"
+            "eventtype": 4,
+            "m_owner": "e73920e6-4d55-4d0d-808b-6ba01929e4b5"
         },
         {
-            "id": "63f8faf4-f44f-4c0c-ba9c-01b4317ebd66",
+            "id": "36d71c4d-14fa-4e56-8777-31d26c362a6c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "collisionObjectId": "52ad5089-cd1a-41db-b72c-a7097788d139",
             "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "52ad5089-cd1a-41db-b72c-a7097788d139"
+            "eventtype": 4,
+            "m_owner": "e73920e6-4d55-4d0d-808b-6ba01929e4b5"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "e33bd624-87fc-43a9-a075-089ae072e107",
-    "visible": true
+    "spriteId": "f5035d65-0f83-4e8c-b332-deb6d309c53e",
+    "visible": false
 }

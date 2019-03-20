@@ -1,10 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-vida=2;
-spd=1;
-h_spd=0;
-v_spd=0;
-grav=.2;
 
-
-estado="movendo";
+if(other.estado=="bolha")other.x+=.5;
