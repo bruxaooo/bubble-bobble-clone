@@ -5,6 +5,8 @@ if(estado=="bolha")
 {	
 	if(other.x>x)x-=.1;
 	if(other.x<x)x+=.1;
+	
+	
 	var escolha = irandom(1);
 	if(escolha==1)
 	{

@@ -5,6 +5,12 @@ spd=1;
 h_spd=0;
 v_spd=0;
 grav=.2;
+salto=5;
+
+estado="caindo";
 
 
-estado="movendo";
+
+// direcao inicial
+
+

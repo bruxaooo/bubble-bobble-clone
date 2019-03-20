@@ -5,6 +5,10 @@
 //====state machine
 switch (estado)
 {
+	case "caindo":
+		if(place_meeting(x,y+1,o_col_enemy))estado="movendo";
+	
+		break;
 	case "bolha":
 		
 		
@@ -14,6 +18,30 @@ switch (estado)
 		break;
 	case "movendo":
 		sprite_index=s_inimigo;
+		
+		
+		var cha = irandom(100);
+		if(cha>50|| !place_meeting(x+sign(h_spd),y+1,o_col))
+		{
+			if(h_spd!=0)
+			{
+				if(!place_meeting(x+sign(h_spd),y+1,o_col))		
+				{
+					h_spd+=salto
+					break;
+				}
+				else if(place_meeting(x,y-salto,o_col))
+				{
+					v_spd-=salto
+					break;
+				}
+				else if(!place_meeting(x,y,o_col))
+				{
+					
+				}
+				
+			}
+		}
 		
 		
 		
