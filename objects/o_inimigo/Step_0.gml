@@ -1,96 +1,86 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(h_spd!=0)image_xscale=sign(h_spd);
+if (estado!="bolha")v_spd+=grav;
+var parede_dir = place_meeting(x+1,y,o_col_enemy);
+var parede_esq = place_meeting(x-1,y,o_col_enemy);
 
 
+randomize();
 //====state machine
 switch (estado)
 {
 	case "caindo":
-		if(place_meeting(x,y+1,o_col_enemy))estado="movendo";
 	
+	
+		if(place_meeting(x,y+1,o_col_enemy))
+		{
+			h_spd-=spd;
+			estado="movendo";
+			
+		}
 		break;
 	case "bolha":
 		
 		
 		//morrendo se o player me tocar emquanto estou na bolha 
-		if(place_meeting(x,y,o_player))instance_destroy();
+		if(place_meeting(x,y,o_player))
+		{
+			instance_destroy();
+		
+		//adicionar pontuacao e criar bonus aki
+		}
+		
+		
 		
 		break;
 	case "movendo":
 		sprite_index=s_inimigo;
 		
+
 		
 		var cha = irandom(100);
-		if(cha>50|| !place_meeting(x+sign(h_spd),y+1,o_col))
+		//ando na horizontal
+		if(place_meeting(x+sign(h_spd),y,o_col_enemy))
 		{
-			if(h_spd!=0)
+			h_spd=-sign(h_spd)*spd;
+		}
+		if(cha>99)
+		{	//escolho se desco ou se pulo 
+			if(place_meeting(x,y+1,o_col_enemy))
 			{
-				if(!place_meeting(x+sign(h_spd),y+1,o_col))		
+				var cha2 = irandom(100);
+				if(cha2>60 && !place_meeting(x+sign(h_spd)*spd,y,o_col_enemy))
+				{	//pulo
+					estado="pula";
+					v_spd=-salto;
+					ultimoy=y;
+				}	//desco
+				else if(!place_meeting(x,y+33,o_col_enemy))
 				{
-					h_spd+=salto
-					break;
-				}
-				else if(place_meeting(x,y-salto,o_col))
-				{
-					v_spd-=salto
-					break;
-				}
-				else if(!place_meeting(x,y,o_col))
-				{
+					estado="desce";
+					ultimoy=y;
 					
 				}
-				
 			}
 		}
 		
-		
-		
 		break;
-
-
-
-
-
-
-
+		
+		
+		
+		
+		
+	case "desce":
+		
+		if(ultimoy<y-30)estado="movendo";
+		break;
+	case "pula":
+		if(ultimoy>y+70)estado="movendo";
+		break;
 }
 //======fim state machine
-if(estado !="bolha")
-{
 
 
-	v_spd+=grav;
-
-
-
-
-	//colisao
-	//horizontal
-	if(place_meeting(x+h_spd,y,o_col_enemy))
-	{
-		while(!place_meeting(x+sign(h_spd),y,o_col_enemy))
-		{
-			x+=sign(h_spd);
-		}
-		h_spd=0;
-	}
-	x+=h_spd;
-
-	//vertical
-	if(place_meeting(x,y+v_spd,o_col_enemy))
-	{
-		while(!place_meeting(x,y+sign(v_spd),o_col_enemy))
-		{
-			y+=sign(v_spd);
-		}
-		v_spd=0;
-	}
-	y+=v_spd;
-
-}
-
-
-
-
-
+show_debug_message(estado);
 
