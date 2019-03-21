@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "019f60bc-43b2-4b84-93ef-8566172c6cb6",
+            "Value": {
+                "id": "b1342997-dce8-403a-8dff-f951aa4c17c5",
+                "resourcePath": "scripts\\scr_easeout\\scr_easeout.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "04824a8c-9dcc-46d8-a994-f5b7e8bba20c",
             "Value": {
                 "id": "a0729afc-6c83-4087-adb5-35a14b62af56",
@@ -68,6 +76,14 @@
                 "id": "99bb051e-7a49-440d-85ed-d74c1d36ce8a",
                 "resourcePath": "views\\1c1fc92f-3e7c-47ab-8cf8-be8efc27641c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1c6cc2a3-7a09-4af3-a320-77800fe044bb",
+            "Value": {
+                "id": "186473e9-da8e-41b0-b82b-ff4d9ef51e99",
+                "resourcePath": "rooms\\rm_lvl2\\rm_lvl2.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -151,6 +167,14 @@
             }
         },
         {
+            "Key": "43702030-e2ea-4191-8fbd-455cc6e30164",
+            "Value": {
+                "id": "a1e13943-5714-4689-92c9-847d515e4e56",
+                "resourcePath": "scripts\\scr_decide_dir\\scr_decide_dir.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4868d095-a68f-46f3-bea8-0a7e1ab12aff",
             "Value": {
                 "id": "c27b2a88-2fcb-46b7-a404-1fec7cac48de",
@@ -219,6 +243,14 @@
             "Value": {
                 "id": "600fd418-3601-4930-9178-71531f7bf55e",
                 "resourcePath": "objects\\o_col_com_bolha_full\\o_col_com_bolha_full.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "707a1eeb-f1aa-4e38-a467-7008a8acc951",
+            "Value": {
+                "id": "011e2bd9-261d-484b-b025-e64412391b27",
+                "resourcePath": "objects\\o_trans\\o_trans.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -541,10 +573,19 @@
                 "resourcePath": "sprites\\s_bolha_up\\s_bolha_up.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "fa79f78c-6e69-4a9f-8a7b-0b8b6a002797",
+            "Value": {
+                "id": "c6d0e940-959a-424f-aec8-4141c97ccbd6",
+                "resourcePath": "objects\\o_control\\o_control.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "script_order": [
-        
+        "019f60bc-43b2-4b84-93ef-8566172c6cb6",
+        "43702030-e2ea-4191-8fbd-455cc6e30164"
     ],
     "tutorial": ""
 }

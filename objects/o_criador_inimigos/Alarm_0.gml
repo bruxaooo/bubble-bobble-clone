@@ -4,7 +4,7 @@ quantidade--;
 if(quantidade>=0)
 {
 	instance_create_layer(x,y,"inimigos",o_inimigo);
-
+	global.inimigos++;
 	alarm[0]=room_speed/2;
 	
 }

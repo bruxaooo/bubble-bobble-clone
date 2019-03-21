@@ -100,7 +100,8 @@ switch (estado)
 		if(place_meeting(x,y,o_player))
 		{
 			instance_destroy();
-		
+			global.inimigos--;
+			
 		//adicionar pontuacao e criar bonus aki
 		}
 		break;

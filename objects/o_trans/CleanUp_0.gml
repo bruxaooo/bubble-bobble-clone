@@ -1,12 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 global.tran = false;
-spd=1;
-h_spd=0;
-v_spd=0;
-grav=.21;
-salto=5.6;
-ultimox=0
 
-estado="caindo";
+surface_free(surf);
+surface_free(surf2);
 

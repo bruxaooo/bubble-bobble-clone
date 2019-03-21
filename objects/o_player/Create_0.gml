@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-spd=1;
+spd=1.5;
 h_spd=0;
 v_spd=0;
 grav=.2;
@@ -13,4 +13,5 @@ volta=false;
 timer_parado=90;
 timer_volta=50;
 estado="movendo";
-
+global.tran = true;
+global.tem_ini=true;

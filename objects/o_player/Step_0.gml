@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+if (global.tran = true) exit;
+
+
 var right,left,jump,shoot;
 chao=place_meeting(x,y+1,o_col);
 
@@ -98,7 +101,11 @@ switch (estado)
 	//_________
 }
 
-
+if(global.inimigos<=0 && !instance_exists(o_criador_inimigos)&& global.tem_ini)
+{
+	global.tem_ini=false;
+	alarm[2]=room_speed*4;
+}
 
 //limitando velocidade
 v_spd=clamp(v_spd,-salto,salto);

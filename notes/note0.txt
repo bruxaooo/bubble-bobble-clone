@@ -3,8 +3,8 @@ player 1 ok!
 
 player 2 ??
 
-
- inimigo ignorar colisao com outras bolhas em determinado estado
+	
+ inimigo ignorar colisao com outras bolhas em determinado estado ok!
  
  criar frutas  local aleatorio ao matar inimigo 
  derrubar fruta se bater na bolha que tem inimigo 
@@ -14,7 +14,9 @@ player 2 ??
  
  sistema de pontuacao
  
- fazer transicao de room
+ fazer transicao de room okk!!!!!!
+ ai do primeiro inimigo ok!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 
  
 menu inicial 
 menu pause
