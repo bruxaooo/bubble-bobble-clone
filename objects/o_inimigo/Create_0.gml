@@ -10,3 +10,4 @@ ultimox=0
 
 estado="caindo";
 
+alarm[1]=room_speed*3;

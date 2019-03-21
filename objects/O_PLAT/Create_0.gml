@@ -1,3 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_restart();
+avanca=true;
+spd=1.5;
+h_spd=0;

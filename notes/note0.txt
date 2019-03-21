@@ -19,7 +19,7 @@ player 2 ??
  
  
 menu inicial 
-menu pause
+menu pause ok!
 
 
 

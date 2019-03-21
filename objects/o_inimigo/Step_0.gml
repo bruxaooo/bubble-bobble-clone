@@ -110,7 +110,7 @@ switch (estado)
 
 
 
-
+v_spd=clamp(v_spd,-salto,salto);
 
 
 show_debug_message(estado);

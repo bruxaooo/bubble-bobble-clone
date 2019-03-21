@@ -109,7 +109,7 @@ if(global.inimigos<=0 && !instance_exists(o_criador_inimigos)&& global.tem_ini)
 
 //limitando velocidade
 v_spd=clamp(v_spd,-salto,salto);
-
+h_spd=clamp(h_spd,-spd,spd);
 
 
 
